@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fdcb5c4c-b21f-46dc-97d9-48b5397bcc7d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/William Most Similar Measure.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/main.ipynb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
@@ -92,7 +91,8 @@
       <workItem from="1606144614128" duration="3758000" />
       <workItem from="1606185019002" duration="972000" />
       <workItem from="1606186742314" duration="498000" />
-      <workItem from="1606225559552" duration="128000" />
+      <workItem from="1606225559552" duration="396000" />
+      <workItem from="1606471471171" duration="3105000" />
     </task>
     <servers />
   </component>
@@ -113,6 +113,6 @@
     </option>
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/383segmenter$main.coverage" NAME="main Coverage Results" MODIFIED="1606225689192" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/383segmenter$main.coverage" NAME="main Coverage Results" MODIFIED="1606474911158" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>

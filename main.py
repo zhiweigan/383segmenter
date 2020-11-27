@@ -18,4 +18,56 @@ for measure in c.parts[0]:
 
     i += 1
 
-c.show()
+def find_major_segments(section1, section2):
+    pass
+
+bounds = [(0, 34), (35, 64), (65, 96), (97, 128)]
+segments = [set([])] * len(bounds)
+similar = {0:(0,34), 2:(65, 96)}
+
+for i in similar.keys():
+    for j in similar.keys():
+        if not i < j: continue
+
+        one = similar[i]
+        two = similar[j]
+
+        longchunks = []
+        currentChunk = out[0]
+        length = 0
+        for k in range(one[0], one[1]+1):
+            if length >= 8:
+                longchunks.append(out[k])
+            if out[k] == currentChunk:
+                length += 1
+            else:
+                length = 0
+                currentChunk = out[k]
+
+        chunknums = set([])
+        for k in range(two[0], two[1]+1):
+            if out[k] in longchunks:
+                chunknums.add(out[k])
+
+        segments[i] = segments[i].union(chunknums)
+        segments[j] = segments[j].union(chunknums)
+
+sectionmap = {}
+alphabet = "ABCDEFGHJIJKLMNOPQRSTUVWXYZ"
+output = ""
+iter = 0
+for se in segments:
+    if len(se) == 0:
+        output += alphabet[iter]
+        iter += 1
+    for elem in se:
+        if elem not in sectionmap:
+            sectionmap[elem] = alphabet[iter]
+            output += alphabet[iter]
+            iter += 1
+        else:
+            output += sectionmap[elem]
+
+print(output)
+
+# c.show()
